@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div {
+            width: 700px;
+            margin: auto;
+        }
+        input {
+            float: left;
+            width: calc(101%);
+        }
+        select{
+            float: left;
+            width: calc(102%);
+        }
+        button {
+            background-color: dodgerblue;
+            padding: -10%;
+}
+        </style>
+</head>
+<body>
+    <h1 align="center">Pendaftaran Mahasiswa Baru</h1>
+    <div>
+    <form action="#">
+        <label for="NPM">NPM (Nomor Pokok Mahasiswa)</label>
+        <br>
+        <input type="Number" id="NPM"
+        placeholder=" Masukkan NPM Anda" required autofocus>
+        <br><br>
+        <label for="Username">Nama Lengkap</label>
+        <br>
+        <input type="text" id="Username"
+        placeholder=" Masukkan Nama Lengkap Anda" required>
+        <br><br>
+        <label for="alamat">Alamat</label>
+        <textarea type="text" id="alamat" placeholder=" Masukkan Alamat Anda" required cols="94"
+        rows="3"></textarea>
+        <br><br>
+        <tr>
+            <label>Jenis Kelamin</label>
+            <br>
+            <label><input type="radio" name="sex" value="1" id="" style="margin:4px;margin-right:-335px;margin-left:-347px;"/><label class="" for="">Laki-laki </label><br>
+            <input type="radio" name="sex" value="2" id="" style="margin:5px;margin-right:-380px;margin-left:-372px;"/><label class="" for="">Perempuan </label></label>
+        </tr>
+        <br><br>
+        <label for="prodi">Prodi</label>
+        <select id="prodi">
+            <option>Teknik Informatika</option>
+            <option>Sistem Informasi</option>
+        </select>
+    </form>
+        <br><br>
+        <button>
+            <h5 style="color:white;">Tambah</h5>
+        </button>
+    </div>
+</body>
+</html>
